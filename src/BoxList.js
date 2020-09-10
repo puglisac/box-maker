@@ -13,9 +13,7 @@ const BoxList = ()=> {
     }
 
     const deleteBox=(box)=>{
-        console.log(box);
-        const idx = boxes.indexOf(box);
-        console.log(idx)
+        const idx = boxes.findIndex((b)=>b.id==box.id);
         boxes.splice(idx,1);
         setBoxes(boxes=>[...boxes])
     }
