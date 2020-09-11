@@ -1,5 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Color Box Maker
+
+Created to practice with forms in React.
+
+### Components:
+
+App - this component renders the BoxList component.  
+
+BoxList - This component renders all of the Box components along with the NewBoxForm component.  
+
+Box- this component displays a div with a background color, width and height based on the props passed to it.  
+
+NewBoxForm - this component renders a form that when submitted, creates a new Box.  
+
+When each Box component is displayed, a button with the text of of “X” is shown under to each Box. When this button is clicked, it will remove that specific box. 
+
 ## Available Scripts
 
 In the project directory, you can run:

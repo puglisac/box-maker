@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Box from './Box';
 import NewBoxForm from './NewBoxForm';
 import { v4 as uuidv4 } from 'uuid';
+import './BoxList.css'
 
 const BoxList = ()=> {
     const [boxes, setBoxes]=useState([]);

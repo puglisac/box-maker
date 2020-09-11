@@ -8,7 +8,7 @@ import React, { useState } from "react";
  */
 
 const NewBoxForm = ({ addBox }) => {
-  const INITIAL_STATE = { width: "", height: "", color: ""};
+  const INITIAL_STATE = { width: "", height: "", color: "#000"};
   const [formData, setFormData] = useState(INITIAL_STATE);
 
   const handleSubmit = evt => {
@@ -21,7 +21,6 @@ const NewBoxForm = ({ addBox }) => {
 
   const handleChange = evt => {
     const { name, value }= evt.target;
-    console.log(name, value)
     setFormData(fData => ({
       ...fData,
       [name]: value
